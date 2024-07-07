@@ -9,3 +9,6 @@
 .button {
   float: right;
 }
+.changeBackground {
+  background-color: lightcyan;
+}
