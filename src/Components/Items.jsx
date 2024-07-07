@@ -1,13 +1,13 @@
 import styles from "./Item.module.css";
 
-export default function Items({ food })
+export default function Items({ food, buyButtonClicked })
 {
-    console.log(styles);
+
     return (<>
         <li className={`${styles['pp-item']} list-group-item`}>
             <span className={styles['pp-span']}>{food}</span>
-            <button onClick={() => console.log('buy button was clicked')} className={`${styles.button} btn btn-info`}> Buy </button>
+            <button onClick={buyButtonClicked} className={`${styles.button} btn btn-info`}> Buy </button>
         </li>
-
     </>);
 }
+
